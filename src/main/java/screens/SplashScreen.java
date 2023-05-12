@@ -12,9 +12,6 @@ public class SplashScreen extends BaseScreen{
     @FindBy(xpath = "//*[@resource-id='com.telran.ilcarro:id/versionText']")
     AndroidElement versionTextView;
 
-    //@FindBy(xpath = "//*[@resource-id='com.sheygam.contactapp:id/title_text']")
-    //AndroidElement titleTextView;
-
     public String getCurrentVersion(){
         return versionTextView.getText();
     }
